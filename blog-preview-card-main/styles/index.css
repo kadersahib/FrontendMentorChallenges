@@ -1,0 +1,142 @@
+body {
+    /* margin: 0; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4D04E;
+}
+
+.medium-text {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 500;
+    /* Medium */
+}
+
+.extra-bold-text {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    /* Extra Bold */
+}
+
+
+.containder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 384px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.containder {
+    border-top: #111111 1.5px solid;
+    border-left: #111111 1.5px solid;
+    border-bottom: #111111 8px solid;
+    border-right: #111111 8px solid;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px;
+    gap: 10px;
+}
+
+.img-container img {
+    width: 336px;
+    border-radius: 12px;
+}
+
+.content {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #F4D04E;
+    border: none;
+    width: 82px;
+    height: 22px;
+    border-radius: 5px;
+    color: #111111;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+}
+
+.content p {
+    color: #111111;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    font-size: 14px;
+}
+
+.content h2 {
+    color: #111111;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    font-size: 24px;
+
+}
+
+.content .para {
+    width: 336px;
+    height: 72px;
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6B6B6B;
+}
+
+.author {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.author img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 14px 24px;
+    }
+
+    .containder {
+        width: 340px;
+    }
+
+    .img-container img {
+        width: 300px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content .para {
+        font-size: 14px;
+        width: 320px;
+        height: 50px;
+        margin: 0;
+    }
+}

@@ -8,7 +8,7 @@
 body {
     min-height: 100vh;
     /* background: #94bff0; */
-    color: #ffffff;
+    background: #D5E1EF;
     padding: 40px 20px;
 }
 
@@ -37,7 +37,7 @@ p {
 
 
 .card {
-    background: #1e293b;
+    background: #fff;
     border-radius: 16px;
     overflow: hidden;
     text-decoration: none;
