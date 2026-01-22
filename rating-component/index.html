@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Rating Component</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="card">
+    <div class="star">★</div>
+
+    <h1>How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+
+    <div class="ratings">
+      <button onclick="setRating(1)">1</button>
+      <button onclick="setRating(2)">2</button>
+      <button onclick="setRating(3)">3</button>
+      <button onclick="setRating(4)">4</button>
+      <button onclick="setRating(5)">5</button>
+    </div>
+
+    <button class="submit" onclick="submitRating()">Submit</button>
+  </main>
+
+  <script>
+    let selectedRating = 0;
+
+    function setRating(value) {
+      selectedRating = value;
+      document.querySelectorAll('.ratings button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      document.querySelectorAll('.ratings button')[value - 1].classList.add('active');
+    }
+
+    function submitRating() {
+      if (selectedRating === 0) return alert("Please select a rating");
+      localStorage.setItem("rating", selectedRating);
+      window.location.href = "thankyou.html";
+    }
+  </script>
+</body>
+
+</html>
